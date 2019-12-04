@@ -87,7 +87,7 @@ In our current example each `<Task>` card component is a `class` component and h
 
 
 
-We want to have display in `<Summary>` component how many tasks is completed and to update that number whenever we click green button in any`<Task>` component.
+We want to display in `<Summary>` component how many tasks is completed and to update that number whenever we click green button in any`<Task>` component.
 
 
 
