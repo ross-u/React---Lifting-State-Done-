@@ -81,8 +81,7 @@ npm start
 In our current example each `<Task>` card component is a `class` component and has a `state` that holds `taskCompleted` value.
 
 
-
-#### [OPEN IMAGE](https://i.imgur.com/yYWXobZ.png)
+<br>
 
 ![img](https://i.imgur.com/yYWXobZ.png)
 
@@ -95,9 +94,12 @@ We want to have display in `<Summary>` component how many tasks is completed and
 In order to do that we have to lift the `state` to the closest common ancestor, so that both components can share access to the same value, as they both depend on it for this functionality.
 
 
+<br>
+
+The next step is to remove the state from the `<Task />` components and lift it to the parent `<ToDoList />`, and create an additional method which will enable the functionality of calculating the number of tasks completed, as represented in the below image:
 
 
-
+![img](https://i.imgur.com/REJyV9U.png)
 
 
 <br>
@@ -319,6 +321,13 @@ render() {
 #### Pass the data from the shared `state` of `ToDoList` to `<Summary>`
 
 
+<br>
+
+ ![img](https://i.imgur.com/wYsfLPY.png)
+
+
+<br>
+
 
 ##### `components/ToDoList.js`
 
@@ -336,7 +345,7 @@ render() {
 ```
 
 
-
+<br>
 
 
 
